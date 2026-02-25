@@ -1,0 +1,20 @@
+<header class="header" [class.scrolled]="isScrolled">
+
+  <div class="logo-area">
+    <img src="assets/images/logo_naver.png" class="logo" alt="Logo">
+    <div class="logo-text">
+      <strong>Dr. Edgar Tuco Calle</strong>
+      <small>T&C Legal · Soluciones Jurídicas</small>
+    </div>
+  </div>
+
+  <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+
+  <nav class="menu" [class.active]="isOpen">
+    <a href="#acerca">Acerca</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+    <a class="login-btn" (click)="openLogin()">Ingresar</a>
+  </nav>
+
+</header>

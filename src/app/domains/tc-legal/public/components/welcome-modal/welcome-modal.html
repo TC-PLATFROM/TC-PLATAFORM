@@ -1,0 +1,25 @@
+<div *ngIf="show"
+     class="modal-overlay"
+     @overlayAnimation>
+
+  <div class="modal-executive"
+       @modalAnimation>
+
+    <div class="modal-header">
+      <h2>T&C Legal</h2>
+      <span class="modal-subtitle">Soluciones Jurídicas</span>
+    </div>
+
+    <div class="modal-body">
+      <p>
+        Usted es cliente de <strong>T&C Legal</strong>.
+        Revise el estado de sus procesos.
+      </p>
+    </div>
+
+    <div class="modal-foo">
+      <button (click)="close()">Entendido</button>
+    </div>
+
+  </div>
+</div>

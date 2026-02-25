@@ -1,0 +1,152 @@
+/* ==========================================
+   HEADER – TC LEGAL PREMIUM
+========================================== */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; /* Mejor que width:100% */
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 80px;
+
+  background: rgba(10, 10, 10, 0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  transition: all 0.3s ease;
+}
+
+/* Scroll activo */
+.header.scrolled {
+  background: rgba(10, 10, 10, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 16px 80px;
+}
+
+/* ===============================
+   LOGO
+=============================== */
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo {
+  height: 48px;
+}
+
+.logo-text strong {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f5c97a;
+  display: block;
+}
+
+.logo-text small {
+  font-size: 12px;
+  color: #cfd4db;
+}
+
+/* ===============================
+   MENÚ
+=============================== */
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #eaeaea;
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #f5c97a;
+}
+
+/* Línea animada */
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 1px;
+  background: #f5c97a;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* Botón login */
+.login-btn {
+  padding: 8px 18px;
+  border: 1px solid #f5c97a;
+  border-radius: 20px;
+}
+
+.login-btn:hover {
+  background: #f5c97a;
+  color: #0a0a0a;
+}
+
+/* ===============================
+   MOBILE
+=============================== */
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+
+  .header {
+    padding: 18px 30px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    right: 30px;
+
+    background: rgba(15, 15, 15, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    flex-direction: column;
+    padding: 25px;
+    gap: 20px;
+    border-radius: 16px;
+
+    display: none;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+}

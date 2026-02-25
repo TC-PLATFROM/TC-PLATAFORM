@@ -1,0 +1,146 @@
+/* ==========================================
+   HEADER – TC GLOBAL PREMIUM
+========================================== */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; /* evita overflow */
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 80px;
+
+  background: rgba(10, 10, 10, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+  transition: all 0.3s ease;
+}
+
+/* ===============================
+   MARCA
+=============================== */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #f5c97a;
+}
+
+.logo-text strong {
+  display: block;
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.logo-text small {
+  font-size: 11px;
+  color: #aaaaaa;
+  letter-spacing: 0.5px;
+}
+
+/* ===============================
+   MENÚ DESKTOP
+=============================== */
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #eaeaea;
+  position: relative;
+  padding-bottom: 6px;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #f5c97a;
+}
+
+/* Línea elegante */
+.menu a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 1.5px;
+  background-color: #f5c97a;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+/* ===============================
+   BOTÓN HAMBURGUESA
+=============================== */
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+
+@media (max-width: 768px) {
+
+  .header {
+    padding: 18px 30px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    right: 30px;
+
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+
+    background: rgba(15, 15, 15, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 16px;
+
+    display: none;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+}

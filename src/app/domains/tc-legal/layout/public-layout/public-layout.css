@@ -1,0 +1,14 @@
+body {
+  margin: -8px;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: -1;
+  inset: 0;
+  background:
+    url('../../../../../assets/imagenes/tc-legal/fondo-legal.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  
+}

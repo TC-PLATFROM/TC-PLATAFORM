@@ -1,0 +1,139 @@
+/* ==========================================
+   CONTACTO – TC LEGAL PREMIUM
+========================================== */
+
+.contact {
+  padding: 100px 10%;
+  max-width: 1100px;
+  margin: auto;
+
+  background: rgba(15, 15, 15, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-radius: 24px;
+  border: 1px solid rgba(245, 201, 122, 0.08);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* ===============================
+   HEADER
+=============================== */
+
+.contact-header {
+  text-align: center;
+}
+
+.contact-header h1 {
+  font-size: 2.4rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.contact-header p {
+  color: #c8ccd3;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* ===============================
+   FORMULARIO
+=============================== */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: rgba(25, 25, 25, 0.8);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+
+  padding: 1rem;
+  color: #ffffff;
+  font-size: 0.95rem;
+
+  transition: all 0.3s ease;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid #f5c97a;
+  box-shadow: 0 0 0 3px rgba(245, 201, 122, 0.15);
+}
+
+/* BOTÓN */
+
+.contact-form button {
+  background: linear-gradient(135deg, #f5c97a, #d4a84f);
+  color: #0a0a0a;
+  border: none;
+  padding: 1rem;
+  border-radius: 14px;
+
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(245, 201, 122, 0.25);
+}
+
+/* ===============================
+   REDES SOCIALES
+=============================== */
+
+.contact-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+}
+
+.contact-socials a {
+  background: rgba(25,25,25,0.8);
+  padding: 12px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: all 0.3s ease;
+}
+
+.contact-socials a:hover {
+  transform: translateY(-4px);
+  border: 1px solid #f5c97a;
+  box-shadow: 0 10px 25px rgba(245,201,122,0.2);
+}
+
+.contact-socials img {
+  width: 24px;
+  height: 24px;
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 70px 8%;
+  }
+
+  .contact-header h1 {
+    font-size: 2rem;
+  }
+}

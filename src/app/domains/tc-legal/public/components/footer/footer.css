@@ -1,0 +1,78 @@
+/* ==========================================
+   FOOTER – TC LEGAL (PREMIUM EJECUTIVO)
+========================================== */
+
+.footer {
+  padding: 80px 80px 40px;
+  background: transparent; /* Respeta fondo global */
+  color: #d4d8df;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Contenedor principal */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* Marca */
+.footer-brand h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f5c97a;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  color: #aab1bb;
+  max-width: 280px;
+  line-height: 1.6;
+}
+
+
+.footer-links a:hover {
+  color: #f5c97a;
+}
+
+
+
+
+
+/* Parte inferior */
+.footer-bottom {
+  margin-top: 50px;
+  padding-top: 25px;
+  text-align: center;
+  font-size: 13px;
+  color: #8f96a3;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+
+@media (max-width: 768px) {
+
+  .footer {
+    padding: 60px 30px 30px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-links {
+    gap: 25px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}

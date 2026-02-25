@@ -1,0 +1,109 @@
+.services {
+  position: relative;
+  padding: 120px 80px;
+  color: #ffffff;
+}
+
+/* Overlay suave opcional para mejorar contraste */
+.services::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.85) 40%,
+    rgba(0, 0, 0, 0.6) 70%,
+    transparent 100%
+  );
+  z-index: 0;
+}
+
+/* Contenedor */
+.services-container {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 1; /* 👈 importante */
+}
+
+/* Encabezado */
+.services-header {
+  max-width: 650px;
+  margin-bottom: 70px;
+}
+
+.services-header h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.services-header p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #dddddd;
+}
+
+/* Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+}
+
+/* Card minimal elegante */
+.service-card {
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px); /* soporte Safari */
+  padding: 35px;
+  border-radius: 18px;
+  transition: 0.4s ease;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cccccc;
+  margin-bottom: 25px;
+}
+
+.service-card span {
+  color: #f5c97a;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
+}
+
+/* Hover elegante */
+.service-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(245, 201, 122, 0.4);
+}
+
+.service-card:hover span {
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services {
+    padding: 100px 30px;
+  }
+
+  .services::before {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.85),
+      rgba(0, 0, 0, 0.6)
+    );
+  }
+}

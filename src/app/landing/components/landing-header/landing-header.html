@@ -1,0 +1,22 @@
+<header class="header">
+
+  <div class="brand">
+    <div class="logo">T&amp;C</div>
+
+    <div class="logo-text">
+      <strong>Dr. Edgar<br />Tuco Calle</strong>
+      <small>T&amp;C | Global Corporation</small>
+    </div>
+  </div>
+
+  <!-- BOTÓN MOBILE -->
+  <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+
+  <!-- MENÚ -->
+  <nav class="menu" [class.active]="isOpen">
+    <a href="#" class="active">Inicio</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#subempresas">Sub-empresas</a>
+  </nav>
+
+</header>

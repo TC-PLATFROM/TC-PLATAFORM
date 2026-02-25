@@ -1,0 +1,20 @@
+<div class="modal-overlay" *ngIf="show">
+  <div class="modal-executive">
+
+    <div class="modal-header">
+      <h2>Acceso a Proceso</h2>
+      <span class="modal-subtitle">{{ selectedService }}</span>
+    </div>
+
+    <div class="modal-body">
+      <input type="text" placeholder="Código de Cliente" [(ngModel)]="codigo">
+      <input type="text" placeholder="Número de Carnet" [(ngModel)]="carnet">
+    </div>
+
+    <div class="modal-footer">
+      <button (click)="close()">Cancelar</button>
+      <button (click)="ingresar()">Ingresar</button>
+    </div>
+
+  </div>
+</div>

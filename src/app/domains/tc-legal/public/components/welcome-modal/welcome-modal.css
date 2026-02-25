@@ -1,0 +1,88 @@
+/* Overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 8, 8, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+  animation: fadeInOverlay 0.3s ease forwards;
+}
+
+/* Modal */
+.modal-executive {
+  width: 420px;
+  max-width: 92%;
+  background: #141414;
+  border-radius: 12px;
+  padding: 45px 38px;
+  text-align: center;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+
+  animation: slideInModal 0.50s ease forwards;
+}
+
+/* Animaciones */
+@keyframes fadeInOverlay {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInModal {
+  from {
+    opacity: 0;
+    transform: translateY(25px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Header */
+.modal-header h2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.modal-subtitle {
+  display: block;
+  font-size: 12px;
+  color: #a0a0a0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Body */
+.modal-body {
+  margin: 28px 0;
+}
+
+.modal-body p {
+  color: #dcdcdc;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Button */
+.modal-foo button {
+  background: #1c1c1c;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  padding: 11px 32px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: all 0.25s ease;
+}
+
+.modal-foo button:hover {
+  background: #d4af37;
+  color: #111;
+}

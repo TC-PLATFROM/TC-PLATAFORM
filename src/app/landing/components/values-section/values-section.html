@@ -1,0 +1,33 @@
+<section class="values-section">
+
+  <div class="container">
+
+    <header class="section-header">
+      <h2>{{ title }}</h2>
+      <p>{{ subtitle }}</p>
+    </header>
+
+    <div class="values-grid">
+
+      <div class="value-card" *ngFor="let value of values">
+        <h3>{{ value.title }}</h3>
+        <p>{{ value.description }}</p>
+      </div>
+
+    </div>
+
+    <div class="objectives">
+
+      <h3>Objetivos estratégicos</h3>
+
+      <ul>
+        <li *ngFor="let objective of objectives">
+          {{ objective }}
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>

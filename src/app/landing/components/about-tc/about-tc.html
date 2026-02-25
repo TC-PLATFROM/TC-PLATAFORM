@@ -1,0 +1,30 @@
+<section class="about-tc">
+
+  <div class="container">
+
+    <div class="content">
+
+      <h2>{{ title }}</h2>
+
+      <p class="description">
+        {{ description }}
+      </p>
+
+      <p class="history">
+        {{ history }}
+      </p>
+
+    </div>
+
+    <div class="stats">
+
+      <div class="stat-card" *ngFor="let stat of stats">
+        <span class="value">{{ stat.value }}</span>
+        <span class="label">{{ stat.label }}</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
