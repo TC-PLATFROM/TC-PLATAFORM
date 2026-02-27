@@ -1,6 +1,3 @@
-/* ===============================
-   VALUES SECTION – ESTILO CORPORATIVO
-================================ */
 
 .values-section {
   position: relative;
@@ -8,7 +5,6 @@
   color: #F1F7FB;
 }
 
-/* Overlay sutil elegante (respeta fondo global) */
 .values-section::before {
   content: "";
   position: absolute;
@@ -29,10 +25,6 @@
   z-index: 1;
 }
 
-/* ===============================
-   HEADER
-================================ */
-
 .section-header {
   max-width: 750px;
   margin-bottom: 4rem;
@@ -51,10 +43,6 @@
   line-height: 1.8;
   color: #d0d3db;
 }
-
-/* ===============================
-   VALUES GRID
-================================ */
 
 .values-grid {
   display: grid;
@@ -94,10 +82,6 @@
   color: #c9ced6;
 }
 
-/* ===============================
-   OBJECTIVES
-================================ */
-
 .objectives {
   max-width: 850px;
 }
@@ -130,13 +114,10 @@
   top: 8px;
   width: 8px;
   height: 8px;
-  background-color: #44000A; /* vino corporativo */
+  background-color: #2a0107;
   border-radius: 50%;
 }
 
-/* ===============================
-   RESPONSIVE
-================================ */
 
 @media (max-width: 768px) {
   .values-section {

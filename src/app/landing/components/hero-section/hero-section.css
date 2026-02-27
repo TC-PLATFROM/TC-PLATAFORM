@@ -7,7 +7,6 @@
   color: #ffffff;
 }
 
-/* Panel oscuro opcional para mejorar lectura */
 .hero::before {
   content: "";
   position: absolute;
@@ -21,28 +20,24 @@
   z-index: 0;
 }
 
-/* Contenedor interno */
 .hero-container {
   max-width: 1200px;
   width: 100%;
   position: relative;
-  z-index: 1; /* 👈 importante para que esté encima del overlay */
+  z-index: 1;
 }
 
-/* Contenido alineado izquierda */
 .hero-left {
   max-width: 650px;
   animation: fadeUp 1s ease-out;
 }
 
-/* Logo */
 .logo {
   width: 130px;
   margin-bottom: 2rem;
   filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.5));
 }
 
-/* Título */
 .hero h1 {
   font-size: clamp(2.5rem, 4vw, 3.8rem);
   font-weight: 700;
@@ -50,7 +45,6 @@
   line-height: 1.2;
 }
 
-/* Slogan */
 .hero h2 {
   font-size: 1.4rem;
   font-weight: 400;
@@ -58,7 +52,6 @@
   color: #f5c97a;
 }
 
-/* Descripción */
 .hero p {
   font-size: 1.05rem;
   line-height: 1.8;
@@ -66,7 +59,6 @@
   color: #dddddd;
 }
 
-/* Botones */
 .hero-buttons {
   display: flex;
   gap: 20px;
@@ -105,7 +97,6 @@
   transform: translateY(-3px);
 }
 
-/* Animación */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -117,7 +108,6 @@
   }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .hero {
     padding: 0 30px;

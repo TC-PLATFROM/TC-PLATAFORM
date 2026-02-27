@@ -4,7 +4,6 @@
   color: #F1F7FB;
 }
 
-/* Overlay suave elegante */
 .about-tc::before {
   content: "";
   position: absolute;
@@ -22,7 +21,7 @@
   max-width: 1100px;
   margin: 0 auto;
   position: relative;
-  z-index: 1; /* 👈 importante */
+  z-index: 1; 
 }
 
 .content {
@@ -49,10 +48,6 @@ h2 {
   line-height: 1.8;
   color: #cccccc;
 }
-
-/* ===================== */
-/* STATS PREMIUM */
-/* ===================== */
 
 .stats {
   display: grid;
@@ -90,7 +85,7 @@ h2 {
   color: #aaaaaa;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .about-tc {
     padding: 100px 30px;

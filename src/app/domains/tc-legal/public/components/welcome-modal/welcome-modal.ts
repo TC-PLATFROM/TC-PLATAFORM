@@ -41,6 +41,6 @@ export class WelcomeModalComponent {
   show = true;
 
   close() {
-    this.show = false; // Se cierra con un solo click
+    this.show = false; 
   }
 }

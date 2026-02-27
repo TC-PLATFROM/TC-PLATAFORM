@@ -1,0 +1,117 @@
+.coming-container {
+   margin: -8px;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  color: #ffffff;
+
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,215,0,0.05), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(198,168,90,0.08), transparent 50%),
+    #000000;
+}
+
+.coming-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/assets/images/noise.png'); 
+  opacity: 0.04;
+  pointer-events: none;
+}
+
+.light-effect {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(212,175,55,0.25), transparent 70%);
+  top: -200px;
+  left: -200px;
+  filter: blur(120px);
+  animation: moveLight 10s infinite alternate ease-in-out;
+}
+
+@keyframes moveLight {
+  0% { transform: translate(0,0); }
+  100% { transform: translate(300px,200px); }
+}
+
+.particles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.particles span {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #d4af37;
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: floatParticle linear infinite;
+}
+
+@keyframes floatParticle {
+  from {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-10vh);
+    opacity: 1;
+  }
+}
+
+.coming-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.coming-content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.gold-line {
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #c6a85a, #f5d27a);
+  margin: 20px auto 30px;
+}
+
+.coming-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #d4af37;
+}
+
+.coming-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #cccccc;
+  margin-bottom: 35px;
+}
+
+.coming-content button {
+  padding: 12px 30px;
+  background: transparent;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 6px;
+}
+
+.coming-content button:hover {
+  background: #d4af37;
+  color: #000;
+}
